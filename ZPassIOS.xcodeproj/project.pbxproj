@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF682B3F1BC032FC001DC391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF682B3E1BC032FC001DC391 /* AppDelegate.swift */; };
+		CF682B411BC032FC001DC391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF682B401BC032FC001DC391 /* ViewController.swift */; };
+		CF682B441BC032FC001DC391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF682B421BC032FC001DC391 /* Main.storyboard */; };
+		CF682B461BC032FC001DC391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF682B451BC032FC001DC391 /* Assets.xcassets */; };
+		CF682B491BC032FC001DC391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF682B471BC032FC001DC391 /* LaunchScreen.storyboard */; };
+		CF682B541BC032FC001DC391 /* ZPassIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF682B531BC032FC001DC391 /* ZPassIOSTests.swift */; };
+		CF682B5F1BC032FC001DC391 /* ZPassIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF682B5E1BC032FC001DC391 /* ZPassIOSUITests.swift */; };
+		CF682B6D1BC03D0D001DC391 /* EncodingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF682B6C1BC03D0D001DC391 /* EncodingModel.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF682B501BC032FC001DC391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF682B331BC032FC001DC391 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF682B3A1BC032FC001DC391;
+			remoteInfo = ZPassIOS;
+		};
+		CF682B5B1BC032FC001DC391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF682B331BC032FC001DC391 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF682B3A1BC032FC001DC391;
+			remoteInfo = ZPassIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF682B3B1BC032FC001DC391 /* ZPassIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPassIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF682B3E1BC032FC001DC391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF682B401BC032FC001DC391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF682B431BC032FC001DC391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF682B451BC032FC001DC391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF682B481BC032FC001DC391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF682B4A1BC032FC001DC391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF682B4F1BC032FC001DC391 /* ZPassIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZPassIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF682B531BC032FC001DC391 /* ZPassIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPassIOSTests.swift; sourceTree = "<group>"; };
+		CF682B551BC032FC001DC391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF682B5A1BC032FC001DC391 /* ZPassIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZPassIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF682B5E1BC032FC001DC391 /* ZPassIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPassIOSUITests.swift; sourceTree = "<group>"; };
+		CF682B601BC032FC001DC391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF682B6C1BC03D0D001DC391 /* EncodingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF682B381BC032FC001DC391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF682B4C1BC032FC001DC391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF682B571BC032FC001DC391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF682B321BC032FC001DC391 = {
+			isa = PBXGroup;
+			children = (
+				CF682B3D1BC032FC001DC391 /* ZPassIOS */,
+				CF682B521BC032FC001DC391 /* ZPassIOSTests */,
+				CF682B5D1BC032FC001DC391 /* ZPassIOSUITests */,
+				CF682B3C1BC032FC001DC391 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF682B3C1BC032FC001DC391 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF682B3B1BC032FC001DC391 /* ZPassIOS.app */,
+				CF682B4F1BC032FC001DC391 /* ZPassIOSTests.xctest */,
+				CF682B5A1BC032FC001DC391 /* ZPassIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF682B3D1BC032FC001DC391 /* ZPassIOS */ = {
+			isa = PBXGroup;
+			children = (
+				CF682B3E1BC032FC001DC391 /* AppDelegate.swift */,
+				CF682B401BC032FC001DC391 /* ViewController.swift */,
+				CF682B421BC032FC001DC391 /* Main.storyboard */,
+				CF682B451BC032FC001DC391 /* Assets.xcassets */,
+				CF682B471BC032FC001DC391 /* LaunchScreen.storyboard */,
+				CF682B4A1BC032FC001DC391 /* Info.plist */,
+				CF682B6C1BC03D0D001DC391 /* EncodingModel.swift */,
+			);
+			path = ZPassIOS;
+			sourceTree = "<group>";
+		};
+		CF682B521BC032FC001DC391 /* ZPassIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF682B531BC032FC001DC391 /* ZPassIOSTests.swift */,
+				CF682B551BC032FC001DC391 /* Info.plist */,
+			);
+			path = ZPassIOSTests;
+			sourceTree = "<group>";
+		};
+		CF682B5D1BC032FC001DC391 /* ZPassIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF682B5E1BC032FC001DC391 /* ZPassIOSUITests.swift */,
+				CF682B601BC032FC001DC391 /* Info.plist */,
+			);
+			path = ZPassIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF682B3A1BC032FC001DC391 /* ZPassIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF682B631BC032FC001DC391 /* Build configuration list for PBXNativeTarget "ZPassIOS" */;
+			buildPhases = (
+				CF682B371BC032FC001DC391 /* Sources */,
+				CF682B381BC032FC001DC391 /* Frameworks */,
+				CF682B391BC032FC001DC391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZPassIOS;
+			productName = ZPassIOS;
+			productReference = CF682B3B1BC032FC001DC391 /* ZPassIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF682B4E1BC032FC001DC391 /* ZPassIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF682B661BC032FC001DC391 /* Build configuration list for PBXNativeTarget "ZPassIOSTests" */;
+			buildPhases = (
+				CF682B4B1BC032FC001DC391 /* Sources */,
+				CF682B4C1BC032FC001DC391 /* Frameworks */,
+				CF682B4D1BC032FC001DC391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF682B511BC032FC001DC391 /* PBXTargetDependency */,
+			);
+			name = ZPassIOSTests;
+			productName = ZPassIOSTests;
+			productReference = CF682B4F1BC032FC001DC391 /* ZPassIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF682B591BC032FC001DC391 /* ZPassIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF682B691BC032FC001DC391 /* Build configuration list for PBXNativeTarget "ZPassIOSUITests" */;
+			buildPhases = (
+				CF682B561BC032FC001DC391 /* Sources */,
+				CF682B571BC032FC001DC391 /* Frameworks */,
+				CF682B581BC032FC001DC391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF682B5C1BC032FC001DC391 /* PBXTargetDependency */,
+			);
+			name = ZPassIOSUITests;
+			productName = ZPassIOSUITests;
+			productReference = CF682B5A1BC032FC001DC391 /* ZPassIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF682B331BC032FC001DC391 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "João Lopes";
+				TargetAttributes = {
+					CF682B3A1BC032FC001DC391 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					CF682B4E1BC032FC001DC391 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CF682B3A1BC032FC001DC391;
+					};
+					CF682B591BC032FC001DC391 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CF682B3A1BC032FC001DC391;
+					};
+				};
+			};
+			buildConfigurationList = CF682B361BC032FC001DC391 /* Build configuration list for PBXProject "ZPassIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF682B321BC032FC001DC391;
+			productRefGroup = CF682B3C1BC032FC001DC391 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF682B3A1BC032FC001DC391 /* ZPassIOS */,
+				CF682B4E1BC032FC001DC391 /* ZPassIOSTests */,
+				CF682B591BC032FC001DC391 /* ZPassIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF682B391BC032FC001DC391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF682B491BC032FC001DC391 /* LaunchScreen.storyboard in Resources */,
+				CF682B461BC032FC001DC391 /* Assets.xcassets in Resources */,
+				CF682B441BC032FC001DC391 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF682B4D1BC032FC001DC391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF682B581BC032FC001DC391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF682B371BC032FC001DC391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF682B411BC032FC001DC391 /* ViewController.swift in Sources */,
+				CF682B6D1BC03D0D001DC391 /* EncodingModel.swift in Sources */,
+				CF682B3F1BC032FC001DC391 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF682B4B1BC032FC001DC391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF682B541BC032FC001DC391 /* ZPassIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF682B561BC032FC001DC391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF682B5F1BC032FC001DC391 /* ZPassIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF682B511BC032FC001DC391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF682B3A1BC032FC001DC391 /* ZPassIOS */;
+			targetProxy = CF682B501BC032FC001DC391 /* PBXContainerItemProxy */;
+		};
+		CF682B5C1BC032FC001DC391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF682B3A1BC032FC001DC391 /* ZPassIOS */;
+			targetProxy = CF682B5B1BC032FC001DC391 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF682B421BC032FC001DC391 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF682B431BC032FC001DC391 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF682B471BC032FC001DC391 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF682B481BC032FC001DC391 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF682B611BC032FC001DC391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF682B621BC032FC001DC391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF682B641BC032FC001DC391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZPassIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZTeam.ZPassIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF682B651BC032FC001DC391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZPassIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZTeam.ZPassIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF682B671BC032FC001DC391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZPassIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZTeam.ZPassIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPassIOS.app/ZPassIOS";
+			};
+			name = Debug;
+		};
+		CF682B681BC032FC001DC391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZPassIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZTeam.ZPassIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZPassIOS.app/ZPassIOS";
+			};
+			name = Release;
+		};
+		CF682B6A1BC032FC001DC391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZPassIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZTeam.ZPassIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZPassIOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CF682B6B1BC032FC001DC391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZPassIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZTeam.ZPassIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZPassIOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF682B361BC032FC001DC391 /* Build configuration list for PBXProject "ZPassIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF682B611BC032FC001DC391 /* Debug */,
+				CF682B621BC032FC001DC391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF682B631BC032FC001DC391 /* Build configuration list for PBXNativeTarget "ZPassIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF682B641BC032FC001DC391 /* Debug */,
+				CF682B651BC032FC001DC391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF682B661BC032FC001DC391 /* Build configuration list for PBXNativeTarget "ZPassIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF682B671BC032FC001DC391 /* Debug */,
+				CF682B681BC032FC001DC391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF682B691BC032FC001DC391 /* Build configuration list for PBXNativeTarget "ZPassIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF682B6A1BC032FC001DC391 /* Debug */,
+				CF682B6B1BC032FC001DC391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF682B331BC032FC001DC391 /* Project object */;
+}

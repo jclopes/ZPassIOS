@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="x4P-cE-8QN">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--ZPass iOS-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZPassIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5J-YT-WYq">
+                                <rect key="frame" x="89" y="72" width="491" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="apk-RS-Wd3"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbu-Sv-lve">
+                                <rect key="frame" x="89" y="110" width="491" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="i2O-LK-y7E"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxa-eN-vKQ">
+                                <rect key="frame" x="89" y="148" width="491" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="xSJ-5X-LuA"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Secret:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkJ-6J-m9n">
+                                <rect key="frame" x="20" y="114" width="61" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tL1-RO-mRu">
+                                <rect key="frame" x="20" y="152" width="37" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wds-9S-Tgl">
+                                <rect key="frame" x="234" y="224" width="133" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Generate Password"/>
+                                <connections>
+                                    <action selector="genPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jP-Qt-Xht"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foA-gB-dur">
+                                <rect key="frame" x="0.0" y="186" width="600" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JbY-ut-6Xe"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salt:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0v-XJ-diL">
+                                <rect key="frame" x="20" y="76" width="34" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="foA-gB-dur" firstAttribute="top" secondItem="Pxa-eN-vKQ" secondAttribute="bottom" constant="8" symbolic="YES" id="02r-96-OeZ"/>
+                            <constraint firstItem="gbu-Sv-lve" firstAttribute="top" secondItem="L5J-YT-WYq" secondAttribute="bottom" constant="8" symbolic="YES" id="3pc-ap-TJX"/>
+                            <constraint firstItem="foA-gB-dur" firstAttribute="top" secondItem="tL1-RO-mRu" secondAttribute="bottom" constant="13" id="5Ye-5v-4Ga"/>
+                            <constraint firstItem="L5J-YT-WYq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8FM-BZ-5n9"/>
+                            <constraint firstItem="gbu-Sv-lve" firstAttribute="trailing" secondItem="Pxa-eN-vKQ" secondAttribute="trailing" id="AZe-KF-kbW"/>
+                            <constraint firstAttribute="trailing" secondItem="foA-gB-dur" secondAttribute="trailing" id="Ab9-IN-iTr"/>
+                            <constraint firstItem="kkJ-6J-m9n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="K1b-JX-Wcu"/>
+                            <constraint firstItem="L5J-YT-WYq" firstAttribute="leading" secondItem="gbu-Sv-lve" secondAttribute="leading" id="Sq9-Rq-yfU"/>
+                            <constraint firstItem="L5J-YT-WYq" firstAttribute="trailing" secondItem="gbu-Sv-lve" secondAttribute="trailing" id="ZyC-ev-e7P"/>
+                            <constraint firstItem="gbu-Sv-lve" firstAttribute="leading" secondItem="kkJ-6J-m9n" secondAttribute="trailing" constant="8" symbolic="YES" id="b83-Bj-knh"/>
+                            <constraint firstItem="foA-gB-dur" firstAttribute="centerX" secondItem="wds-9S-Tgl" secondAttribute="centerX" id="cPi-sY-eRt"/>
+                            <constraint firstItem="foA-gB-dur" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="186" id="ccU-sJ-wsW"/>
+                            <constraint firstItem="wds-9S-Tgl" firstAttribute="top" secondItem="foA-gB-dur" secondAttribute="bottom" constant="8" symbolic="YES" id="dLd-Ur-vAc"/>
+                            <constraint firstItem="gbu-Sv-lve" firstAttribute="leading" secondItem="Pxa-eN-vKQ" secondAttribute="leading" id="o57-Q2-eW7"/>
+                            <constraint firstItem="Pxa-eN-vKQ" firstAttribute="centerY" secondItem="tL1-RO-mRu" secondAttribute="centerY" id="olR-lV-4Ce"/>
+                            <constraint firstItem="kkJ-6J-m9n" firstAttribute="centerY" secondItem="gbu-Sv-lve" secondAttribute="centerY" id="qJH-EQ-76X"/>
+                            <constraint firstItem="foA-gB-dur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rej-Qm-a1K"/>
+                            <constraint firstItem="tL1-RO-mRu" firstAttribute="leading" secondItem="kkJ-6J-m9n" secondAttribute="leading" id="uEG-JP-FCR"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="FG0-wR-gBT" appends="YES" id="iw9-29-Cd2"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="ZPass iOS" id="dAP-hs-kD7" userLabel="ZPass iOS"/>
+                    <connections>
+                        <outlet property="passwordField" destination="foA-gB-dur" id="hhY-uA-7rL"/>
+                        <outlet property="saltField" destination="L5J-YT-WYq" id="TwP-oL-NhV"/>
+                        <outlet property="secretField" destination="gbu-Sv-lve" id="RVn-lw-oiC"/>
+                        <outlet property="urlField" destination="Pxa-eN-vKQ" id="1FC-LD-cIB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FG0-wR-gBT">
+                    <connections>
+                        <action selector="viewTapped:" destination="BYZ-38-t0r" id="ujB-98-eUw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1059" y="402"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oMI-A3-C5Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x4P-cE-8QN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qFU-Ix-ubs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZMV-fO-oc8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FrT-OX-9yG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="-303"/>
+        </scene>
+    </scenes>
+</document>
