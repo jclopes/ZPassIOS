@@ -49,6 +49,7 @@
 		CF682B5E1BC032FC001DC391 /* ZPassIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPassIOSUITests.swift; sourceTree = "<group>"; };
 		CF682B601BC032FC001DC391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF682B6C1BC03D0D001DC391 /* EncodingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingModel.swift; sourceTree = "<group>"; };
+		CF682B6F1BC17E6F001DC391 /* ZPassIOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZPassIOS-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				CF682B471BC032FC001DC391 /* LaunchScreen.storyboard */,
 				CF682B4A1BC032FC001DC391 /* Info.plist */,
 				CF682B6C1BC03D0D001DC391 /* EncodingModel.swift */,
+				CF682B6F1BC17E6F001DC391 /* ZPassIOS-Bridging-Header.h */,
 			);
 			path = ZPassIOS;
 			sourceTree = "<group>";
@@ -407,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZTeam.ZPassIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZPassIOS/ZPassIOS-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -419,6 +422,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZTeam.ZPassIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZPassIOS/ZPassIOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
