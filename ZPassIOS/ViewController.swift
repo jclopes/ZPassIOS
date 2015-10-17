@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         secretField.text = encodingModel.secret
         urlField.text = encodingModel.url
         passwordField.text = ""
+        UIPasteboard.generalPasteboard().string = ""
     }
     
     override func viewDidLoad() {
@@ -38,6 +39,7 @@ class ViewController: UIViewController {
     @IBAction func genPassword(sender: AnyObject) {
         valueChanged(sender)
         passwordField.text = encodingModel.password
+        UIPasteboard.generalPasteboard().string = passwordField.text
     }
     
     @IBAction func valueChanged(sender: AnyObject) {
