@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet var secretField: UITextField!
     @IBOutlet var urlField: UITextField!
     @IBOutlet var passwordField: UITextField!
-
-    let encodingModel = EncodingModel(salt: "salt", secret: "secret", url: "url.com")
+    
+    var activeTextField: UITextField!
+    
+    let encodingModel = EncodingModel(salt: "", secret: "", url: "")
     
     func refreshUI() {
         saltField.text = encodingModel.salt
@@ -37,6 +39,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func genPassword(sender: AnyObject) {
+        activeTextField?.resignFirstResponder()
         valueChanged(sender)
         passwordField.text = encodingModel.password
         UIPasteboard.generalPasteboard().string = passwordField.text
@@ -53,5 +56,9 @@ class ViewController: UIViewController {
         saltField.resignFirstResponder()
         secretField.resignFirstResponder()
         urlField.resignFirstResponder()
+    }
+    
+    @IBAction func selectTextField(sender: UITextField) {
+        activeTextField = sender;
     }
 }

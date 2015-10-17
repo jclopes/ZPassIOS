@@ -18,95 +18,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5J-YT-WYq">
-                                <rect key="frame" x="89" y="72" width="491" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Salt" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5J-YT-WYq">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                 <connections>
+                                    <action selector="selectTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="v71-gw-lbR"/>
                                     <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="apk-RS-Wd3"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbu-Sv-lve">
-                                <rect key="frame" x="89" y="110" width="491" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Secret" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbu-Sv-lve">
+                                <rect key="frame" x="20" y="110" width="560" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <connections>
+                                    <action selector="selectTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="GXB-l7-weA"/>
                                     <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="i2O-LK-y7E"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxa-eN-vKQ">
-                                <rect key="frame" x="89" y="148" width="491" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL"/>
-                                <connections>
-                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="xSJ-5X-LuA"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Secret:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkJ-6J-m9n">
-                                <rect key="frame" x="20" y="114" width="61" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tL1-RO-mRu">
-                                <rect key="frame" x="20" y="152" width="37" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wds-9S-Tgl">
-                                <rect key="frame" x="234" y="224" width="133" height="30"/>
+                                <rect key="frame" x="234" y="285" width="133" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Generate Password"/>
                                 <connections>
                                     <action selector="genPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jP-Qt-Xht"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foA-gB-dur">
-                                <rect key="frame" x="0.0" y="186" width="600" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foA-gB-dur">
+                                <rect key="frame" x="20" y="247" width="560" height="30"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="JbY-ut-6Xe"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salt:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0v-XJ-diL">
-                                <rect key="frame" x="20" y="76" width="34" height="21"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URI" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxa-eN-vKQ">
+                                <rect key="frame" x="20" y="148" width="560" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL"/>
+                                <connections>
+                                    <action selector="selectTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="AMj-cR-gzh"/>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="xSJ-5X-LuA"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="foA-gB-dur" firstAttribute="top" secondItem="Pxa-eN-vKQ" secondAttribute="bottom" constant="8" symbolic="YES" id="02r-96-OeZ"/>
-                            <constraint firstItem="gbu-Sv-lve" firstAttribute="top" secondItem="L5J-YT-WYq" secondAttribute="bottom" constant="8" symbolic="YES" id="3pc-ap-TJX"/>
-                            <constraint firstItem="foA-gB-dur" firstAttribute="top" secondItem="tL1-RO-mRu" secondAttribute="bottom" constant="13" id="5Ye-5v-4Ga"/>
-                            <constraint firstItem="L5J-YT-WYq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8FM-BZ-5n9"/>
-                            <constraint firstItem="gbu-Sv-lve" firstAttribute="trailing" secondItem="Pxa-eN-vKQ" secondAttribute="trailing" id="AZe-KF-kbW"/>
-                            <constraint firstAttribute="trailing" secondItem="foA-gB-dur" secondAttribute="trailing" id="Ab9-IN-iTr"/>
-                            <constraint firstItem="kkJ-6J-m9n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="K1b-JX-Wcu"/>
-                            <constraint firstItem="L5J-YT-WYq" firstAttribute="leading" secondItem="gbu-Sv-lve" secondAttribute="leading" id="Sq9-Rq-yfU"/>
-                            <constraint firstItem="L5J-YT-WYq" firstAttribute="trailing" secondItem="gbu-Sv-lve" secondAttribute="trailing" id="ZyC-ev-e7P"/>
-                            <constraint firstItem="gbu-Sv-lve" firstAttribute="leading" secondItem="kkJ-6J-m9n" secondAttribute="trailing" constant="8" symbolic="YES" id="b83-Bj-knh"/>
-                            <constraint firstItem="foA-gB-dur" firstAttribute="centerX" secondItem="wds-9S-Tgl" secondAttribute="centerX" id="cPi-sY-eRt"/>
-                            <constraint firstItem="foA-gB-dur" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="186" id="ccU-sJ-wsW"/>
-                            <constraint firstItem="wds-9S-Tgl" firstAttribute="top" secondItem="foA-gB-dur" secondAttribute="bottom" constant="8" symbolic="YES" id="dLd-Ur-vAc"/>
-                            <constraint firstItem="gbu-Sv-lve" firstAttribute="leading" secondItem="Pxa-eN-vKQ" secondAttribute="leading" id="o57-Q2-eW7"/>
-                            <constraint firstItem="Pxa-eN-vKQ" firstAttribute="centerY" secondItem="tL1-RO-mRu" secondAttribute="centerY" id="olR-lV-4Ce"/>
-                            <constraint firstItem="kkJ-6J-m9n" firstAttribute="centerY" secondItem="gbu-Sv-lve" secondAttribute="centerY" id="qJH-EQ-76X"/>
-                            <constraint firstItem="foA-gB-dur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rej-Qm-a1K"/>
-                            <constraint firstItem="tL1-RO-mRu" firstAttribute="leading" secondItem="kkJ-6J-m9n" secondAttribute="leading" id="uEG-JP-FCR"/>
+                            <constraint firstItem="wds-9S-Tgl" firstAttribute="centerX" secondItem="foA-gB-dur" secondAttribute="centerX" id="4Yx-TB-FxG"/>
+                            <constraint firstItem="gbu-Sv-lve" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="I5u-wo-e56"/>
+                            <constraint firstItem="Pxa-eN-vKQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Je6-Tr-5hu"/>
+                            <constraint firstItem="wds-9S-Tgl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NQy-Tn-dUh"/>
+                            <constraint firstItem="Pxa-eN-vKQ" firstAttribute="trailing" secondItem="foA-gB-dur" secondAttribute="trailing" id="TaX-Qt-cbV"/>
+                            <constraint firstItem="gbu-Sv-lve" firstAttribute="trailing" secondItem="L5J-YT-WYq" secondAttribute="trailing" id="WA1-t9-Ov5"/>
+                            <constraint firstItem="Pxa-eN-vKQ" firstAttribute="trailing" secondItem="gbu-Sv-lve" secondAttribute="trailing" id="aSR-YA-Uql"/>
+                            <constraint firstItem="wds-9S-Tgl" firstAttribute="top" secondItem="foA-gB-dur" secondAttribute="bottom" constant="8" symbolic="YES" id="egO-eR-YJC"/>
+                            <constraint firstItem="foA-gB-dur" firstAttribute="leading" secondItem="Pxa-eN-vKQ" secondAttribute="leading" id="jRc-Yc-Jg1"/>
+                            <constraint firstItem="Pxa-eN-vKQ" firstAttribute="leading" secondItem="gbu-Sv-lve" secondAttribute="leading" id="jan-sN-ZCa"/>
+                            <constraint firstItem="L5J-YT-WYq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="jip-H8-XW1"/>
+                            <constraint firstItem="Pxa-eN-vKQ" firstAttribute="top" secondItem="gbu-Sv-lve" secondAttribute="bottom" constant="8" symbolic="YES" id="q5k-10-QQs"/>
+                            <constraint firstItem="gbu-Sv-lve" firstAttribute="top" secondItem="L5J-YT-WYq" secondAttribute="bottom" constant="8" symbolic="YES" id="s1u-cr-TXs"/>
+                            <constraint firstItem="L5J-YT-WYq" firstAttribute="leading" secondItem="gbu-Sv-lve" secondAttribute="leading" id="tIK-QD-JN7"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="FG0-wR-gBT" appends="YES" id="iw9-29-Cd2"/>
