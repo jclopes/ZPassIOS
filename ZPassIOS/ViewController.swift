@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func genPassword(sender: AnyObject) {
+        valueChanged(sender)
         passwordField.text = encodingModel.password
     }
     
@@ -51,6 +52,4 @@ class ViewController: UIViewController {
         secretField.resignFirstResponder()
         urlField.resignFirstResponder()
     }
-
 }
-
